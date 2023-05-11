@@ -1,0 +1,142 @@
+body{
+    overflow: hidden;
+    background-image: url("pudim.jpg");
+    background-size: cover;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px; 
+    margin-top: 20%;
+    margin-left: 46.75%;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+
+  .button:hover {
+    background-color: #ff6659;
+  }
+
+  .modal {
+    visibility: hidden;
+    display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4);
+      z-index: 2;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .modal-content {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 95vh;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 80px black;
+    padding: 10px;
+    text-align: justify;
+    background-color: white;
+    animation: surgeAnimation 1s ease-in-out;
+}
+
+#eel{
+    visibility: hidden;
+    position: absolute;
+    margin-left: -50%;
+    margin-top: 2%;
+    height: 400px;
+    z-index: 2;
+    animation: surgeAnimation 1s ease-in-out;
+    border-radius: 10px;
+}
+
+#duck{
+    visibility: hidden;
+    position: absolute;
+    margin-left: -50%;
+    margin-top: 25%;
+    height: 400px;
+    z-index: 2;
+    animation: surgeAnimation 1s ease-in-out;
+    border-radius: 10px;
+}
+#boneco{
+    visibility: hidden;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 2%;
+    height: 400px;
+    z-index: 2;
+    border-radius: 10px;
+    animation: surgeAnimation 1s ease-in-out;
+}
+#duck1{
+    visibility: hidden;
+    position: absolute;
+    margin-left: -32.5%;
+    margin-top: 25%;
+    height: 400px;
+    z-index: 2;
+    animation: surgeAnimation 1s ease-in-out;
+    border-radius: 10px;
+}
+#turtle{
+    visibility: hidden;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: 25%;
+    height: 400px;
+    z-index: 2;
+    animation: surgeAnimation 1s ease-in-out;
+    border-radius: 10px;
+}
+
+
+    @keyframes surgeAnimation {
+      0% { opacity: 0; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    #video{
+        position: absolute;
+        height: 50%;
+        margin: auto;
+        left: 35px;
+        top: 400px;
+    }
+
+    #my-canvas{
+        position: absolute;
+        height: 2000px;
+        width: 2000px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    
